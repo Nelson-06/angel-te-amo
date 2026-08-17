@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-gothic: 'Cinzel Decorative', serif;
+    --font-heading: 'Cinzel', serif;
+    --font-serif: 'Cormorant Garamond', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.font-gothic {
+  font-family: var(--font-gothic);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-serif-romantic {
+  font-family: var(--font-serif);
+}
+
+/* Custom Baroque Ornate Frame & Gold/Silver Accents for Sophisticated Dark */
+.baroque-frame-outer {
+  position: relative;
+  background: linear-gradient(135deg, #1f1f24 0%, #121215 30%, #2a2a30 50%, #0d0d10 70%, #242429 100%);
+  box-shadow: 
+    0 12px 36px rgba(0, 0, 0, 0.95),
+    0 0 0 1px rgba(193, 154, 107, 0.25),
+    inset 0 1px 2px rgba(245, 230, 211, 0.4),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.8),
+    0 0 30px rgba(193, 154, 107, 0.08);
+}
+
+.baroque-frame-inner {
+  border: 1px solid rgba(193, 154, 107, 0.3);
+  box-shadow: 
+    inset 0 0 20px rgba(0, 0, 0, 0.95),
+    inset 0 0 4px rgba(193, 154, 107, 0.2),
+    0 0 0 1px rgba(0, 0, 0, 0.8);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #FFF6E9 0%, #C19A6B 45%, #E5C287 75%, #A67C4A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.silver-text-gradient {
+  background: linear-gradient(180deg, #ffffff 0%, #E0E0E0 40%, #94a3b8 70%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.silver-chrome-gradient {
+  background: linear-gradient(135deg, #F5F5F5 0%, #E0E0E0 25%, #C19A6B 50%, #F5E6D3 75%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(193, 154, 107, 0.2);
+}
+
+.crimson-silver-glow {
+  text-shadow: 0 0 12px rgba(193, 154, 107, 0.5), 0 0 24px rgba(224, 224, 224, 0.2);
+}
+
+.silver-glow {
+  box-shadow: 0 0 20px rgba(224, 224, 224, 0.15);
+}
+
+/* Candle flame flicker */
+@keyframes candleFlicker {
+  0%, 100% { transform: scale(1) rotate(-1deg); opacity: 0.95; filter: drop-shadow(0 0 8px #f59e0b) drop-shadow(0 0 15px #ef4444); }
+  25% { transform: scale(1.08, 0.92) rotate(2deg); opacity: 1; filter: drop-shadow(0 0 12px #fbbf24) drop-shadow(0 0 20px #dc2626); }
+  50% { transform: scale(0.95, 1.05) rotate(-2deg); opacity: 0.85; filter: drop-shadow(0 0 6px #f59e0b) drop-shadow(0 0 12px #b91c1c); }
+  75% { transform: scale(1.03, 0.97) rotate(1deg); opacity: 0.98; filter: drop-shadow(0 0 10px #fbbf24) drop-shadow(0 0 18px #ef4444); }
+}
+
+.animate-flame {
+  animation: candleFlicker 1.8s infinite ease-in-out;
+  transform-origin: bottom center;
+}
+
+/* Floating animation for dark romantic atmosphere */
+@keyframes romanticFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1.5deg); }
+}
+
+.animate-romantic-float {
+  animation: romanticFloat 6s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+

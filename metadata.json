@@ -1,0 +1,6 @@
+{
+  "name": "Eterno Amor - Mesiversario Romántico",
+  "description": "Una experiencia romántica inmutable con estética Sophisticated Dark, marcos barrocos ornamentados para fotos de pareja, carta sellada en cera dorada, contador de mesiversario y razones de amor para celebrar una historia eterna.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
