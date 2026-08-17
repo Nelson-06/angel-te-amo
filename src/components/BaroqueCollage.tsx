@@ -215,6 +215,8 @@ export const BaroqueCollage: React.FC<BaroqueCollageProps> = ({
                       <img
                         src={activePhoto.url}
                         alt={activePhoto.caption}
+                        loading="eager"
+                        decoding="async"
                         className="w-full h-full object-cover rounded-lg filter brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-700"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
@@ -355,6 +357,8 @@ const BaroqueOrnateFrame: React.FC<FrameProps> = ({
               <img
                 src={photo.url}
                 alt={photo.caption}
+                loading="eager"
+                decoding="async"
                 className="w-full h-full object-cover filter brightness-95 contrast-105 group-hover:scale-105 group-hover:brightness-105 transition-all duration-700"
               />
               
